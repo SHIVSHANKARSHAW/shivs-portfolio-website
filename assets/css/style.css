@@ -136,7 +136,6 @@ textarea {
   display: block;
   width: 100%;
   background: none;
-  font: inherit;
 }
 
 ::selection {
@@ -201,10 +200,6 @@ article {
   z-index: -1;
 }
 
-.icon-box ion-icon {
-  --ionicon-stroke-width: 35px;
-}
-
 article {
   display: none;
 }
@@ -264,6 +259,11 @@ article.active {
   border-radius: 3px;
 }
 
+.resume img {
+    filter: brightness(0) invert(1); /* This will change the image color to white */
+}
+
+/* Additional styles continue... */
 .has-scrollbar::-webkit-scrollbar {
   width: 5px; /* for vertical scrollbar */
   height: 5px; /* for horizontal scrollbar */
@@ -2021,4 +2021,14 @@ textarea.form-input::-webkit-resizer {
   background-color:  var(--eerie-black-2);
   margin-bottom: 3%;
 
+}
+
+.resume img {
+  filter: brightness(0) invert(1);
+  padding-top: 30%;
+  padding-left: 30%;
+}
+
+.resume img:hover {
+transform: scale(1.1);
 }
